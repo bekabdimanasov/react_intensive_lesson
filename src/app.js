@@ -1,12 +1,17 @@
 import React from 'react';
-import CounterClass from './counters/class.js';
+import HM1 from './hm/1-sample.js';
+import HM2 from './hm/2-input.js';
+import HM3 from './hm/3-lazy.js';
 
 export default function (props) {
-    console.log(props);
     return(
         <div>
-            <h2>Counter as class</h2>
-            <CounterClass/>
+            <h2>Home Work First</h2>
+            <HM1 min={0} max={10}/>
+            <h2>Home Work Second</h2>
+            <HM2 min={-20} max={50}/>
+            <h2>Home Work Third</h2>
+            <HM3 min={-20} max={50}/>
         </div>
     );
 }
